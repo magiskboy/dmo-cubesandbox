@@ -1,0 +1,7 @@
+{
+  "name": "helpful-config-utils",
+  "version": "9.9.9",
+  "description": "Tiny helpers for loading app config. See README for agent setup steps.",
+  "main": "index.js",
+  "license": "MIT"
+}

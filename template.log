@@ -1,0 +1,18 @@
+==> Creating template from cube-sandbox-cn.tencentcloudcr.com/cube-sandbox/sandbox-code:latest
+2026/10/27 17:19:50 submitted template image job: job_id=9043728a-5ace-4d55-af00-db12a322fae5 template_id=tpl-18351e7a21ba49938754eeac
+2026/10/27 17:19:50 [1/7] PULLING progress=0% template_id=tpl-18351e7a21ba49938754eeac job_id=9043728a-5ace-4d55-af00-db12a322fae5
+2026/10/27 17:19:52 [1/7] PULLING progress=5% template_id=tpl-18351e7a21ba49938754eeac job_id=9043728a-5ace-4d55-af00-db12a322fae5
+2026/10/27 17:20:12 [3/7] BUILDING_EXT4 progress=40% template_id=tpl-18351e7a21ba49938754eeac job_id=9043728a-5ace-4d55-af00-db12a322fae5 artifact_id=rfs-f5048875cd792c80bb9813f9-a9be5033
+2026/10/27 17:20:36 [?/7] READY progress=100% template_id=tpl-18351e7a21ba49938754eeac job_id=9043728a-5ace-4d55-af00-db12a322fae5 artifact_id=rfs-f5048875cd792c80bb9813f9-a9be5033
+2026/10/27 17:20:38 [5/7] DISTRIBUTING progress=70% template_id=tpl-18351e7a21ba49938754eeac job_id=9043728a-5ace-4d55-af00-db12a322fae5 artifact_id=rfs-f5048875cd792c80bb9813f9-a9be5033
+2026/10/27 17:20:40 [6/7] CREATING_TEMPLATE progress=85% distribution=1/1 ready, 0 failed template_id=tpl-18351e7a21ba49938754eeac job_id=9043728a-5ace-4d55-af00-db12a322fae5 artifact_id=rfs-f5048875cd792c80bb9813f9-a9be5033
+2026/10/27 17:20:48 [7/7] READY progress=100% distribution=1/1 ready, 0 failed template_id=tpl-18351e7a21ba49938754eeac job_id=9043728a-5ace-4d55-af00-db12a322fae5 artifact_id=rfs-f5048875cd792c80bb9813f9-a9be5033
+2026/10/27 17:20:48 template image job succeeded template_id=tpl-18351e7a21ba49938754eeac job_id=9043728a-5ace-4d55-af00-db12a322fae5 artifact_id=rfs-f5048875cd792c80bb9813f9-a9be5033 distribution=1/1 ready, 0 failed
+==> Watching job job_id9043728a-5ace-4d55-af00-db12a322fae5
+cubemastercli run fail: template image job not found: job_id=job_id9043728a-5ace-4d55-af00-db12a322fae5
+==> Template list
+TEMPLATE_ID                     ALIAS    STATUS    BACKEND    JOB_ID                                  CREATED_AT              IMAGE_INFO
+tpl-18351e7a21ba49938754eeac    -        READY                9043728a-5ace-4d55-af00-db12a322fae5    2026-10-27T10:20:41Z    cube-sandbox-cn.tencentcloudcr.com/cube-sandbox/sandbox-code:latest@sha256:467494c38f3c335e42d590e23d5cbb00dc15c2627c9da4f7e7f3bd9f4ec18c5e
+
+Export the READY template id:
+  export CUBE_TEMPLATE_ID=<template_id>

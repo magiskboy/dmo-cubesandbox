@@ -1,0 +1,113 @@
+==> Preflight
+crw-rw-rw-. 1 root kvm 10, 232 Oct 27 16:54 /dev/kvm
+Filesystem     Type  Size  Used Avail Use% Mounted on
+/dev/loop0     xfs    50G 1012M   49G   2% /data/cubelet
+active
+               total        used        free      shared  buff/cache   available
+Mem:            30Gi       3.5Gi        12Gi       334Mi        16Gi        27Gi
+CUBE_SANDBOX_NETWORK_CIDR=10.100.0.0/18
+==> Running online-install (MIRROR=cn)
+[online-install] Running pre-download preflight checks...
+[online-install] glibc version 2.43 OK (>= 2.31)
+[online-install] Pre-download preflight checks passed.
+[online-install] MIRROR=cn, fetching latest release info from https://download.cubesandbox.com/release/latest.json...
+[online-install] CN mirror latest asset: https://cnb.cool/CubeSandbox/CubeSandbox/-/releases/download/v0.7.3/cube-sandbox-one-click-v0.7.3-amd64.tar.gz
+[online-install] downloading cube-sandbox-one-click-v0.7.3-amd64.tar.gz...
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100     82 100     82   0      0    801      0                              0100     82 100     82   0      0    800      0                              0
+  0      0   0      0   0      0      0      0                              0  0 281.1M   0  1.82M   0      0  1.65M      0   02:49   00:01   02:48  1.82M  2 281.1M   2  7.00M   0      0  3.32M      0   01:24   00:02   01:22  3.49M  4 281.1M   4 12.15M   0      0  3.90M      0   01:12   00:03   01:09  4.03M  6 281.1M   6 17.31M   0      0  4.20M      0   01:06   00:04   01:02  4.30M  7 281.1M   7 22.46M   0      0  4.38M      0   01:04   00:05   00:59  4.47M  9 281.1M   9 27.62M   0      0  4.50M      0   01:02   00:06   00:56  5.13M 11 281.1M  11 32.78M   0      0  4.59M      0   01:01   00:07   00:54  5.12M 13 281.1M  13 37.93M   0      0  4.65M      0   01:00   00:08   00:52  5.12M 15 281.1M  15 43.09M   0      0  4.71M      0   00:59   00:09   00:50  5.12M 17 281.1M  17 48.25M   0      0  4.75M      0   00:59   00:10   00:49  5.12M 18 281.1M  18 53.41M   0      0  4.78M      0   00:58   00:11   00:47  5.13M 20 281.1M  20 58.56M   0      0  4.81M      0   00:58   00:12   00:46  5.13M 22 281.1M  22 63.71M   0      0  4.84M      0   00:58   00:13   00:45  5.13M 24 281.1M  24 68.87M   0      0  4.86M      0   00:57   00:14   00:43  5.13M 26 281.1M  26 74.03M   0      0  4.87M      0   00:57   00:15   00:42  5.13M 28 281.1M  28 79.18M   0      0  4.89M      0   00:57   00:16   00:41  5.13M 29 281.1M  29 84.34M   0      0  4.91M      0   00:57   00:17   00:40  5.13M 31 281.1M  31 89.44M   0      0  4.92M      0   00:57   00:18   00:39  5.13M 33 281.1M  33 94.61M   0      0  4.93M      0   00:57   00:19   00:38  5.12M 35 281.1M  35 99.76M   0      0  4.94M      0   00:56   00:20   00:36  5.12M 37 281.1M  37 104.9M   0      0  4.95M      0   00:56   00:21   00:35  5.12M 39 281.1M  39 110.0M   0      0  4.95M      0   00:56   00:22   00:34  5.11M 40 281.1M  40 115.1M   0      0  4.96M      0   00:56   00:23   00:33  5.12M 42 281.1M  42 120.3M   0      0  4.97M      0   00:56   00:24   00:32  5.12M 44 281.1M  44 125.4M   0      0  4.97M      0   00:56   00:25   00:31  5.12M 46 281.1M  46 130.5M   0      0  4.98M      0   00:56   00:26   00:30  5.11M 48 281.1M  48 135.7M   0      0  4.98M      0   00:56   00:27   00:29  5.12M 50 281.1M  50 140.8M   0      0  4.99M      0   00:56   00:28   00:28  5.12M 51 281.1M  51 146.0M   0      0  4.99M      0   00:56   00:29   00:27  5.12M 53 281.1M  53 151.1M   0      0  5.00M      0   00:56   00:30   00:26  5.12M 55 281.1M  55 156.3M   0      0  5.00M      0   00:56   00:31   00:25  5.12M 57 281.1M  57 161.4M   0      0  5.00M      0   00:56   00:32   00:24  5.12M 59 281.1M  59 166.6M   0      0  5.01M      0   00:56   00:33   00:23  5.12M 61 281.1M  61 171.7M   0      0  5.01M      0   00:56   00:34   00:22  5.11M 62 281.1M  62 176.8M   0      0  5.01M      0   00:56   00:35   00:21  5.12M 64 281.1M  64 182.0M   0      0  5.02M      0   00:55   00:36   00:19  5.12M 66 281.1M  66 187.1M   0      0  5.02M      0   00:55   00:37   00:18  5.12M 68 281.1M  68 192.3M   0      0  5.02M      0   00:55   00:38   00:17  5.12M 70 281.1M  70 197.5M   0      0  5.02M      0   00:55   00:39   00:16  5.12M 72 281.1M  72 202.6M   0      0  5.03M      0   00:55   00:40   00:15  5.12M 73 281.1M  73 207.8M   0      0  5.03M      0   00:55   00:41   00:14  5.12M 75 281.1M  75 212.9M   0      0  5.03M      0   00:55   00:42   00:13  5.11M 77 281.1M  77 217.9M   0      0  5.03M      0   00:55   00:43   00:12  5.09M 79 281.1M  79 222.9M   0      0  5.03M      0   00:55   00:44   00:11  5.07M 81 281.1M  81 227.9M   0      0  5.03M      0   00:55   00:45   00:10  5.04M 82 281.1M  82 232.9M   0      0  5.03M      0   00:55   00:46   00:09  5.01M 84 281.1M  84 237.9M   0      0  5.03M      0   00:55   00:47   00:08  5.00M 86 281.1M  86 242.9M   0      0  5.03M      0   00:55   00:48   00:07  4.99M 88 281.1M  88 247.9M   0      0  5.02M      0   00:55   00:49   00:06  4.98M 89 281.1M  89 253.0M   0      0  5.02M      0   00:55   00:50   00:05  5.00M 91 281.1M  91 258.0M   0      0  5.02M      0   00:55   00:51   00:04  4.99M 93 281.1M  93 263.0M   0      0  5.02M      0   00:55   00:52   00:03  5.00M 95 281.1M  95 268.0M   0      0  5.02M      0   00:55   00:53   00:02  5.00M 97 281.1M  97 273.0M   0      0  5.02M      0   00:55   00:54   00:01  5.00M 98 281.1M  98 278.1M   0      0  5.02M      0   00:55   00:55          5.00M100 281.1M 100 281.1M   0      0  5.02M      0   00:55   00:55          5.00M100 281.1M 100 281.1M   0      0  5.02M      0   00:55   00:55          5.00M100 281.1M 100 281.1M   0      0  5.02M      0   00:55   00:55          5.00M
+[online-install] extracting cube-sandbox-one-click-v0.7.3-amd64.tar.gz...
+[online-install] running install.sh (version v0.7.3-amd64)...
+[one-click] install mode: install
+[one-click] generated CUBE_SANDBOX_MINIO_ROOT_PASSWORD (24 chars); it will be saved to .one-click.env
+[one-click] generated CUBE_TEMPLATE_CALLBACK_TOKEN (32 chars); it will be saved to .one-click.env
+[one-click] glibc version 2.43 OK (>= 2.31)
+[one-click] auto-detected node IP from wlp0s20f3: 192.168.1.25
+[one-click] using node IP: 192.168.1.25
+[one-click] filled CUBE_S3_* from local MinIO (http://192.168.1.25:9000 bucket=cube-volumes)
+[one-click] using primary network interface: wlp0s20f3
+[one-click] CUBE_SANDBOX_NETWORK_CIDR preflight OK: 10.100.0.0/18
+[one-click] checking and installing dependencies...
+[one-click] release manifest contract OK: /tmp/tmp.k2pE0Vg7WJ/cube-sandbox-one-click-v0.7.3-amd64/release-manifest.json
+[one-click] extracting package /tmp/tmp.k2pE0Vg7WJ/cube-sandbox-one-click-v0.7.3-amd64/assets/package/sandbox-package.tar.gz
+[one-click] cubelet cubecow startup dependencies OK: mkfs.ext4 mount umount losetup
+[one-click] patched cubevs CIDR: 10.100.0.0/18
+[one-click] patched cube-router enable: false
+[one-click] patched cube-egress admin URL: http://127.0.0.1:9091
+[one-click] CubeS3lvol: staged CubeS3lvol-v0.7.3
+[one-click] CubeS3lvol: installed as CubeS3lvol-v0.7.3; the bare name points at it
+[one-click] stopping existing systemd deployment under /usr/local/services/cubetoolbox
+[one-click] inventory /tmp/tmp.XzoHw8BmZA/sandbox-package/cube-shim -> /data/cubelet/root/component_versions/cube-shim/v0.7.3
+[one-click] inventory /tmp/tmp.XzoHw8BmZA/sandbox-package/cube-image -> /data/cubelet/root/component_versions/cube-image/guest-image-260820-1
+[one-click] inventory /tmp/tmp.XzoHw8BmZA/sandbox-package/cube-agent -> /data/cubelet/root/component_versions/cube-agent/v0.7.3
+[one-click] inventory kernel bm -> /data/cubelet/root/component_versions/cube-kernel-scf/sha256-665d550c5eed
+[one-click] inventory kernel pvm -> /data/cubelet/root/component_versions/cube-kernel-scf/sha256-10c21b61578a
+[one-click] CubeMaster redis db_no=0 (CUBE_EXTERNAL_REDIS_DB)
+[one-click] CubeTemplateCenter redis db_no=0 (CUBE_EXTERNAL_REDIS_DB)
+[one-click] selected ordinary guest kernel: /usr/local/services/cubetoolbox/cube-kernel-scf/vmlinux -> vmlinux-bm
+[one-click] seeded CubeMaster/plugin/volume-cos.conf from example (edit COS credentials before use)
+[one-click] seeded Cubelet/plugin/volume-cos.conf from example (edit COS credentials before use)
+[one-click] wrote CubeMaster/plugin/volume-s3.conf endpoint=http://192.168.1.25:9000 bucket=cube-volumes
+[one-click] wrote Cubelet/plugin/volume-s3.conf endpoint=http://192.168.1.25:9000 bucket=cube-volumes
+[s3-deps] host arch: x86_64, package manager: dnf
+[s3-deps] install jq
+Updating and loading repositories:
+ Fedora 44 - x86_64 - Updates           100% |   6.2 KiB/s |   5.4 KiB |  00m01s
+Repositories loaded.
+Package "jq-1.8.1-3.fc44.x86_64" is already installed.
+
+Nothing to do.
+[s3-deps] install s3fs
+Updating and loading repositories:
+Repositories loaded.
+Package    Arch   Version       Repository      Size
+Installing:
+ s3fs-fuse x86_64 0:1.97-1.fc44 fedora     964.2 KiB
+
+Transaction Summary:
+ Installing:         1 package
+
+Total size of inbound packages is 409 KiB. Need to download 409 KiB.
+After this operation, 964 KiB extra will be used (install 964 KiB, remove 0 B).
+Warning: A pending offline transaction initiated by the following command will be invalidated: dnf5daemon-server
+[1/1] s3fs-fuse-0:1.97-1.fc44.x86_64    100% | 343.9 KiB/s | 408.5 KiB |  00m01s
+--------------------------------------------------------------------------------
+[1/1] Total                             100% | 219.2 KiB/s | 408.5 KiB |  00m02s
+Running transaction
+[1/3] Verify package files              100% |  76.0   B/s |   1.0   B |  00m00s
+[2/3] Prepare transaction               100% |   2.0   B/s |   1.0   B |  00m00s
+[3/3] Installing s3fs-fuse-0:1.97-1.fc4 100% | 973.9 KiB/s | 966.1 KiB |  00m01s
+Warning: Pending offline transaction has been invalidated.
+To reschedule, run: dnf5daemon-server
+Complete!
+[s3-deps] --- verification ---
+[s3-deps] OK  jq        jq-1.8.1
+[s3-deps] OK  s3fs      Amazon Simple Storage Service File System V1.97 with OpenSSL
+[s3-deps] OK  /dev/fuse present
+[s3-deps] all selected dependencies present
+[one-click] installed VERSION.txt to /usr/local/services/cubetoolbox/VERSION.txt
+[one-click] installed env.example baseline to /usr/local/services/cubetoolbox/env.example
+[one-click] installed release-manifest.json to /usr/local/services/cubetoolbox/release-manifest.json
+[one-click] restoring SELinux contexts under /usr/local/services/cubetoolbox
+[one-click] wrote /etc/cubeegress/l7-marks.conf (http=0xCE010000 https=0xCE020000 mask=0xFFFF0000)
+[one-click-systemd] installed cube-sandbox-coredns.service
+[one-click-systemd] installed cube-sandbox-cube-api.service
+[one-click-systemd] installed cube-sandbox-cube-egress-net.service
+[one-click-systemd] installed cube-sandbox-cube-egress.service
+[one-click-systemd] installed cube-sandbox-cubelet.service
+[one-click-systemd] installed cube-sandbox-cube-lifecycle-manager.service
+[one-click-systemd] installed cube-sandbox-cubemaster.service
+[one-click-systemd] installed cube-sandbox-cubeops.service
+[one-click-systemd] installed cube-sandbox-cube-proxy.service
+[one-click-systemd] installed cube-sandbox-cube-templatecenter.service
+[one-click-systemd] installed cube-sandbox-dns.service
+[one-click-systemd] installed cube-sandbox-minio.service
+[one-click-systemd] installed cube-sandbox-mysql.service
+[one-click-systemd] installed cube-sandbox-redis.service
+[one-click-systemd] installed cube-sandbox-s3lvol.service
+[one-click-systemd] installed cube-sandbox-webui.service
+[one-click-systemd] installed cube-sandbox-compute.target
+[one-click-systemd] installed cube-sandbox-control.target
+[one-click-systemd] systemd unit skeleton installed to /etc/systemd/system
+Created symlink '/etc/systemd/system/multi-user.target.wants/cube-sandbox-control.target' → '/etc/systemd/system/cube-sandbox-control.target'.

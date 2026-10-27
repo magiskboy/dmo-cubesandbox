@@ -1,0 +1,8 @@
+Creating sandbox with allowlist (httpbin.org NOT allowed)...
+Sandbox: 1454f0b8a72740b29e7387113332d2d8
+exfil stdout: 000CURL_FAIL:28
+exfil stderr: curl: (28) Connection timed out after 15003 milliseconds
+exfil exit: 0
+npm registry stdout: 000CURL_FAIL:28
+Done. Check audit log:
+  sudo grep -i httpbin /data/log/cube-egress/access.jsonl | tail

@@ -1,0 +1,13 @@
+deny rule dict-ish: Rule(name='deny_exfil_httpbin', match=Match(sni=None, host='httpbin.org', method=None, path=None, scheme='https', port=None), action=Action(allow=False, inject=None, audit='metadata'))
+id ee8b01b171a149bea303c3b023d08656
+EXFIL out:
+ code:000 err:Connection timed out after 20002 milliseconds
+---headers---
+---body---
+
+
+EXFIL err: curl: (28) Connection timed out after 20002 milliseconds
+
+NPM: npm:000
+ curl: (28) Connection timed out after 15002 milliseconds
+

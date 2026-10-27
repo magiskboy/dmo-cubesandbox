@@ -1,0 +1,12 @@
+{
+  "name": "demo-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo app for CubeSandbox egress blocking of prompt-injected exfiltration",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "helpful-config-utils": "file:../malicious-pkg"
+  }
+}

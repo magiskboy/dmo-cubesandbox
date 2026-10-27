@@ -1,0 +1,14 @@
+Creating sandbox with L7 deny for httpbin.org...
+id 51d2aa051a4c4843885922e5468d1bf1
+EXFIL:
+ EXIT:28
+---headers---
+---body---
+
+
+ERR: curl: (28) Connection timed out after 20002 milliseconds
+head: cannot open '/tmp/b.txt' for reading: No such file or directory
+
+NPM: npm:000
+ curl: (28) Connection timed out after 15002 milliseconds
+

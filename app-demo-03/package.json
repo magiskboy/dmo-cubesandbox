@@ -1,0 +1,10 @@
+{
+  "name": "app-demo-03",
+  "version": "1.0.0",
+  "private": true,
+  "description": "OpenCode demo: unset-var rm -rf runs in CubeSandbox MicroVM without harming the host",
+  "scripts": {
+    "start": "node -e \"console.log('app-demo-03: paste DEMO_PROMPT.md into OpenCode web UI')\"",
+    "cleanup": "bash scripts/buggy-cleanup.sh"
+  }
+}

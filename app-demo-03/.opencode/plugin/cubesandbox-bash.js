@@ -1,0 +1,1 @@
+/home/thanh/Work/zen8/vtnet/demo-cubesandbox/opencode-plugin-sandbox/plugin/cubesandbox-bash.js

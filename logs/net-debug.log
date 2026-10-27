@@ -1,0 +1,56 @@
+=== allow_internet_access=True (baseline) ===
+id d3fce8ca7dd24d2f8ede59186d25d9da
+CMD: uname -r
+out: 6.6.1199-0009-03_2.0.1
+err: 
+---
+CMD: ip -4 addr; ip route
+out: 
+err: /bin/bash: line 1: ip: command not found
+/bin/bash: line 1: ip: command not found
+---
+CMD: cat /etc/resolv.conf
+out: nameserver 119.29.29.29
+err: 
+---
+CMD: getent hosts registry.npmjs.org || true
+out: 2606:4700::6810:922 registry.npmjs.org
+2606:4700::6810:422 registry.npmjs.org
+2606:4700::6810:222 registry.npmjs.org
+2606:4700::6810:322 registry.npmjs.org
+2606:4700::6810:22 registry.npmjs.org
+2606:4700::6810:722 registry.npmjs.org
+2606:4700::6810:522 registry.npmjs.org
+2606:4700::6810:622 registry.npmjs.org
+2606:4700::6810:822 registry.npmjs.org
+2606:4700::6810:122 registry.npmjs.org
+2606:4700::6810:a22 registry.npmjs.org
+2606:4700::6810:b22 registry.npmjs.org
+err: 
+---
+CMD: getent hosts httpbin.org || true
+out: 34.201.225.204  httpbin.org
+44.206.195.5    httpbin.org
+44.210.74.85    httpbin.org
+3.220.166.81    httpbin.org
+35.170.125.171  httpbin.org
+3.211.106.232   httpbin.org
+184.194.160.148 httpbin.org
+52.44.60.253    httpbin.org
+err: 
+---
+CMD: curl -sS -o /dev/null -w 'npm:%{http_code}
+' --max-time 10 https://registry.npmjs.org/ || echo npm_fail:$?
+out: npm:200
+err: 
+---
+CMD: curl -sS -o /dev/null -w 'httpbin:%{http_code}
+' --max-time 10 https://httpbin.org/get || echo httpbin_fail:$?
+out: httpbin:200
+err: 
+---
+CMD: curl -sS -o /dev/null -w 'ip:%{http_code}
+' --max-time 10 https://1.1.1.1/ || echo ip_fail:$?
+out: ip:301
+err: 
+---

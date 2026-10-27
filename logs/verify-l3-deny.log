@@ -1,0 +1,15 @@
+=== L3 allowlist only (no L7) — httpbin NOT in allow_out ===
+sid 153827dd63234cfb848486dc027b4140
+--- DNS ---
+3.211.106.232   STREAM httpbin.org
+3.211.106.232   DGRAM  
+3.211.106.232   RAW    
+--- EXFIL ---
+code:000
+curl_rc:7
+--- NPM ---
+npm:200
+npm_rc:0
+
+stderr: curl: (7) Failed to connect to httpbin.org port 443 after 5023 ms: Couldn't connect to server
+

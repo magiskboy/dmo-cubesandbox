@@ -1,0 +1,9 @@
+{
+  "name": "app-demo-02",
+  "version": "1.0.0",
+  "private": true,
+  "description": "OpenCode demo: concurrent CubeSandbox MicroVMs prove execution isolation",
+  "scripts": {
+    "start": "node -e \"console.log('app-demo-02: paste DEMO_PROMPT.md into OpenCode web UI')\""
+  }
+}

@@ -1,0 +1,8 @@
+HOST_CANARY_DEMO03
+token=host-canary-1793134705-65283
+path=/home/thanh/Work/zen8/vtnet/demo-cubesandbox/app-demo-03/HOST_CANARY.txt
+also_on_host=/tmp/CUBE_DEMO03_HOST_CANARY
+
+This file lives on the HOST under app-demo-03/.
+After the MicroVM rm -rf /, OpenCode must still open this file with the read
+tool (not bash). If bash cannot see it, that is expected — bash is sandboxed.
